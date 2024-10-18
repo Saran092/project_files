@@ -1,0 +1,352 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 1000px;
+/*	background: rgb(17 0 31);*/
+/*	background-color: black;*/
+/*	color: white;*/
+	color: black;
+	font-family: Roboto;
+}
+
+nav {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	padding-left: 30px;
+	z-index: 999;
+}
+
+nav{
+	background-color: rgba(255, 255, 255,.1);
+	color: black;
+	box-shadow: 0 2px 45px rgba(255,255,255,.2);
+	border:1px solid rgba(255,255,255,0.5);
+	width: 100%;
+	backdrop-filter: blur(4px);
+	padding-top: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+
+}
+
+.logo{
+	display: flex;
+	flex: 1fr;
+	width: 7rem;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.Menu-bar{
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(255, 255, 255,.1);
+	color: black;
+	box-shadow: 0 2px 45px rgba(0,0,0,.2);
+	border-radius: 50px;
+	border:1px solid rgba(255,255,255,0.1);
+	padding: 10px;
+	backdrop-filter: blur(5px);
+}
+
+.Contact-info{
+	display: flex;
+	align-items: center;
+	background-color: rgba(255, 255,255,.1);
+	box-shadow: 0 2px 45px rgba(255,255,255,.2);
+	border-radius: 50px;
+	border:1px solid rgba(0,0,0,0.5);
+	backdrop-filter: blur(5px);	
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-right: 10px;
+}
+
+.Contact-info img{
+	width: 10px;
+	margin-left: 10px;
+}
+
+.Contact-info a{
+	text-decoration: none;
+	color: black;
+}
+
+.Menu-bar ul{
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.Menu-bar ul li{
+	padding: 6px;
+	list-style: none;
+}
+
+.Menu-bar li a, .Contact-info a{
+	text-decoration: none;
+	color: black;
+}
+
+.Mode-icon{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.Mode-icon button{
+	border: none;
+	background-color: white;
+}
+
+.Menu-img{
+	display: none;
+}
+
+/*---------------Mobile View------------*/
+.SideMenu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 240px;
+	z-index: 999;
+	background-color:rgba(255, 241, 242,1);
+	/*backdrop-filter: blur(10px);
+	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);*/
+	display: none;
+	flex-direction: column;
+	gap: 20px;
+	align-items: start;
+	justify-content:start;
+	padding: 50px 20px;
+}
+
+.SideMenu li{
+	list-style: none;
+}
+
+.SideMenu a{
+	text-decoration: none;
+	color: black;
+}
+
+.Mobile-View-Menu{
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap:40px;
+
+}
+
+.Close-icon
+{
+	width: 20px;
+	cursor: pointer;
+}
+
+.Close-div{
+	position: absolute;
+	top:30px;
+	right: 0;
+	margin-right: 50px;
+}
+
+
+
+.Profile{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 110px;
+	gap:25px;
+}
+
+.Profile-img{
+	width: 150px ;
+	height: 150px ;
+	border-radius: 75px;
+	object-fit: cover;
+}
+
+.Contact-me{
+	background-color: linear-gradient(#ff7e5f, #feb47b);
+}
+
+.Contact-me img{
+	width: 100px;
+	height: 100px;
+}
+.hand-image{
+	width: 24px;
+}
+
+.Contact-button{
+	border-radius: 30px;
+	background:linear-gradient(to right,#b820e6, #da7d20);
+	padding: 20px 50px;
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.Contact-button-Resume-button{
+	border-radius: 30px;
+	border: 1px solid grey;
+	background:white;
+	padding: 20px 50px;
+	color: black;
+	display: inline-block;
+	align-items: center;
+	gap: 4px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.Contact-resume{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+	margin-top: 10px;
+}
+/*-----------About-Session---------------*/
+
+.About-Session{
+	margin-top:200px;
+	margin-left: 30px;
+}
+.About-Session h4{
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+.About-Session h2{
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 48px;
+	font-weight: 400;
+}
+.About-image{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+
+}
+.My-image{
+	width: 500px;
+}
+.image-about{
+	position: relative;
+}
+.About-content{
+	display: flex;
+	flex-direction: column;
+	flex:1;
+}
+.Code-img{
+	width: 28px;
+	margin-bottom: 5px;
+}
+.container-about {
+    display: flex;
+    gap: 1rem; /* Space between the language boxes */
+    flex-wrap: wrap; /* Ensures boxes wrap on smaller screens */
+    justify-content: center; /* Centers the content */
+}
+
+.Lang-li {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid rgb(55, 65, 80);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
+}
+
+.Lang-li:hover {
+    box-shadow: 5px 6px 4px rgba(0, 0, 0, 1);
+    transform: translateY(-.025rem);
+}
+
+.Lang-li h3 {
+    color: rgb(55, 65, 81);
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Lang-li p {
+    max-width: 100%;
+    color: rgb(55, 65, 81);
+    word-wrap: break-word;
+    white-space: normal; 
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width:1024px)
+{
+	
+	.Contact-info{
+		display: none;
+	}
+	.Mode-icon{
+		margin-right: 60px;
+	}
+	.Menu-img{
+		display: none;
+	}
+	.Profile{
+		font-size:14px;
+	}
+}
+@media screen and (max-width:770px){
+	.Menu-bar{
+		display: none;
+	}
+	.Menu-icon{
+		display: inline-block;
+	}
+	.Profile{
+		font-size: 12px;
+	}
+	.Contact-resume{
+		flex-direction: column;
+	}
+	.Menu-img{
+		display:block;
+		margin-right: -5px;
+	}
+	.My-image{
+		width:70%;
+	}
+	.About-image{
+		flex-direction: column;	
+	}
+	.Lang-li {
+        width: 100%; /* Makes the boxes full width on smaller screens */
+        margin-bottom: 1rem;
+    }
+
+}

@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+.webCamOp,.uploadImgOp,.predictOp{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 30px;
+
+}
+.buttonCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.predictOp{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: auto;
+
+}
+#image-upload{
+    text-align: center;
+    color: #FFD700;
+    font-size: 30px;
+}
+h1{
+    font-size: 50px;
+}
+.Menu{
+    font-size: 25px;
+}
+video, canvas {
+    margin-top: 15px;
+    border: 1px solid black;
+}
+#label-container {
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFD700;
+
+
+}
+#webcam-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#image-upload-container{
+    margin-top: 15px;
+    width: 50%;
+    margin-left: 22rem;
+}
+#image-upload-container
+{
+
+    font-size: 50px;
+}

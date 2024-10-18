@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Saran</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<img src="./image/logo.png" alt="Logo" class="logo">
+		<div class="Menu-bar">
+			<ul>
+				<li><a href="#top">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#work">My Work</a></li>
+				<li><a href="#contact">Contact me</a></li>
+		</ul>
+		</div>
+		<div class="Mode-icon">
+			<button><img style="width: 24px;" src="./image/moon_icon.png" alt=""></button>
+			<div class="Contact-info" >
+				<a href="#contact">Contact <img  src="./image/arrow-icon.png" alt="Contact"></a>
+			</div>
+			<button onclick="showSidebar()" class="Menu-icon"><img style="width: 24px;"src="./image/menu-black.png" alt="" class="Menu-img">
+
+		</div>
+
+		<!-- ------------Mobile View-------- -->
+
+		<ul class="SideMenu">
+			<div onclick="hideSidebar()"class="Close-div">
+				<img src="./image/close-black.png" alt="" class="Close-icon">
+			</div>
+			<div class="Mobile-View-Menu">
+				<li><a href="#top" onclick="hideSidebar()">Home</a></li>
+				<li><a href="#about" onclick="hideSidebar()">About</a></li>
+				<li><a href="#services" onclick="hideSidebar()">Services</a></li>
+				<li><a href="#work" onclick="hideSidebar()">My Work</a></li>
+				<li><a href="#contact" onclick="hideSidebar()">Contact me</a></li>
+			</div>
+		</ul>
+	</nav>
+
+		<!-- -----------Header----------- -->
+
+		<div class="Profile">
+			<img class="Profile-img"src="./Images/Saran.jpg" alt="Profile" >
+
+			<h3> Hi! I'm Saran <img class="hand-image"src="./image/hand-icon.png"></h3>
+			<h1 class="Title">Frontend web Developer</h1>
+			<p class="Content">I am an Electronics and Communication Engineering student with a strong interest in both IT and Core Technology.</p>
+			<p>I am eager to explore opportunities that allow me to leverage my skills in both areas.</p>
+
+			<div class="Contact-resume">
+				<a class="Contact-button" href="#contact">contact me<img style="width:16px; margin-left: 10px;" src="./image/right-arrow-white.png" alt=" "></a>
+
+				<a class="Contact-button-Resume-button" href="./image/logo.png" download>my resume<img style="width:16px;margin-left: 10px; " src="./image/download-icon.png" alt=" "></a>
+			</div>
+		</div>
+
+		<!-- ------------------About Me--------------- -->
+		<div id="about" class="About-Session">
+			<h4>Introduction</h4>
+			<h2>About me</h2>
+			<div class="About-image">
+				<div class="image-about">
+					<img class="My-image"src="./Images/Profile.png" alt="">
+				</div>
+				<div class="About-content">
+					<p style="margin-bottom: 10px;max-width:42rem">I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+					<div class="container-about">
+					    <div class="Lang-li">
+					        <img class="Code-img" src="./image/code-icon.png" alt="">
+					        <h3>Languages</h3>
+					        <p class="Lang-known">HTML, CSS, JavaScript, C, Java, Python</p>
+					    </div>
+					    <div class="Lang-li">
+					        <img class="Code-img" src="./image/edu-icon.png" alt="">
+					        <h3>Education</h3>
+					        <p class="Lang-known">B.E in Electronics and Communication Engineering</p>
+					    </div>
+					    <div class="Lang-li">
+					        <img class="Code-img" src="./image/project-icon.png" alt="">
+					        <h3>Projects</h3>
+					        <p class="Lang-known">Built more than 5 projects</p>
+					    </div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+</body>
+</html>
